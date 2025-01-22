@@ -1,5 +1,9 @@
-## 컨셉
+## 노션 링크를 따라가세요!
+https://hbpencil-blog.notion.site/183d9441120280cf9ccaef3fe180615a?pvs=4
 
+
+
+## 컨셉
 
 > **위기에 빠진 친구를 구하라!**
 > 
@@ -11,7 +15,7 @@
 ## 플레이
 
 > **스폰 위치**
-> 
+
 
 ![image](https://github.com/user-attachments/assets/6b5e3ff5-a7ba-414d-9464-a65bc4a7c774)
 
@@ -19,9 +23,10 @@
 버섯 마을에서 당신의 버섯 동포가 사라졌다고 해요! 이런.. 어느 인간의 소행인진 몰라도, 마을에 찾아가보니 우리 버섯 친구가 안타깝게도… 가장 높은 건물의 지붕에 놓여져 있군요? 얼른 구해볼까요?
 
 > **마법의 상호작용**
-> 
 
-![image](https://github.com/user-attachments/assets/70fdda7b-71cb-4da6-9650-0b4fb043a6b3)
+
+![image](https://github.com/user-attachments/assets/3eb3f9fe-e038-41b0-a74d-f2dd7a2ffe83)
+
 
 
 손도 발도 없는 당신! 안타깝게도 버섯입니다. 그러나, 걱정마세요! 당신은 아주 “특별한” 버섯이니깐요. 당신은 사물들에게 마법을 부려 움직이게 할 수 있습니다!
@@ -33,7 +38,7 @@
 </aside>
 
 > **어떻게든 올라가**
-> 
+
 
 ![image](https://github.com/user-attachments/assets/35a008f8-f9bf-4bb5-bccf-a944a162542e)
 
