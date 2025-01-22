@@ -16,14 +16,16 @@
 > **스폰 위치**
 > 
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/359bb605-9881-4e5c-8ad2-290bdb013c62/639c6487-2f8d-4406-a41e-fbbcbe4dd1e0/540ff49b-0883-4df4-9924-b97d7ed97057.png)
+![image](https://github.com/user-attachments/assets/6b5e3ff5-a7ba-414d-9464-a65bc4a7c774)
+
 
 버섯 마을에서 당신의 버섯 동포가 사라졌다고 해요! 이런.. 어느 인간의 소행인진 몰라도, 마을에 찾아가보니 우리 버섯 친구가 안타깝게도… 가장 높은 건물의 지붕에 놓여져 있군요? 얼른 구해볼까요?
 
 > **마법의 상호작용**
 > 
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/359bb605-9881-4e5c-8ad2-290bdb013c62/1166bc92-d60b-4687-9eba-eab26c00a13a/image.png)
+![image](https://github.com/user-attachments/assets/70fdda7b-71cb-4da6-9650-0b4fb043a6b3)
+
 
 손도 발도 없는 당신! 안타깝게도 버섯입니다. 그러나, 걱정마세요! 당신은 아주 “특별한” 버섯이니깐요. 당신은 사물들에게 마법을 부려 움직이게 할 수 있습니다!
 
@@ -36,14 +38,15 @@
 > **어떻게든 올라가**
 > 
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/359bb605-9881-4e5c-8ad2-290bdb013c62/53915254-1ec1-46d8-9074-7c6b267c50d8/image.png)
+![image](https://github.com/user-attachments/assets/35a008f8-f9bf-4bb5-bccf-a944a162542e)
+
 
 당신의 영웅적인 마법 능력으로, 어떻게든 구조물을 거쳐서 가장 높은 건물에 도달해봅시다! 물론.. 순탄하지는 않겠죠?..
 
 > **포자 가루**
 > 
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/359bb605-9881-4e5c-8ad2-290bdb013c62/0f46e1d5-c088-4c67-b40f-e3e63ec06daa/image.png)
+![image](https://github.com/user-attachments/assets/a799f970-3ae2-4dc2-a6d2-0727d964325b)
 
 우리 버섯 종족은! 아주 특별한 능력이 있답니다. 버섯이 흔들어지면 포자 가루가 날리는 것은 알고 계시죠? 포자 가루는 당신이 해야할 일을 알고 있습니다. “포자는 답을 알고 있다.”
 
