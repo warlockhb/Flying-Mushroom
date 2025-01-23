@@ -10,16 +10,29 @@ UCLASS()
 class SPARTAPROJECT_API AInteractableActor : public AActor
 {
 	GENERATED_BODY()
-
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+	
 public:
 	// Sets default values for this actor's properties
 	AInteractableActor();
 
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
+	//——————————————————————————————————————————————————————————————————————
+	// 프로퍼티 & 변수
+	//——————————————————————————————————————————————————————————————————————
+	
 
-public:
-	// Called every frame
+	//——————————————————————————————————————————————————————————————————————
+	// 함수
+	//——————————————————————————————————————————————————————————————————————
+
 	virtual void Tick(float DeltaTime) override;
+
+	// 마법 관련 함수
+	void Magic();
+
+	// void 
+	//
+
 };
