@@ -3,12 +3,25 @@
 
 #include "SpartaProject/Public/Platforms/InteractableActor.h"
 
+#include "Components/SphereComponent.h"
+
 
 // Sets default values
 AInteractableActor::AInteractableActor()
 {
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+
+	InteractableCollision = CreateDefaultSubobject<UBoxComponent>("InteractableCollision");
+	RootComponent = InteractableCollision;
+
+	// 충돌 감지 설정
+	InteractableCollision->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+	InteractableCollision->SetCollisionObjectType(ECC_WorldDynamic);
+	InteractableCollision->SetCollisionResponseToAllChannels(ECR_Ignore);
+	InteractableCollision->SetCollisionResponseToChannel(ECC_Visibility, ECR_Block);
+
+	
 }
 
 // Called when the game starts or when spawned
@@ -22,5 +35,26 @@ void AInteractableActor::BeginPlay()
 void AInteractableActor::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	Magic();
+}
+
+// 마법 관련 함수
+void AInteractableActor::Magic()
+{
+	
+}
+
+
+void AInteractableActor::StartMagic()
+{
+	// 플레이어의 충돌체 감지에 의해서 인터페이스를 띄우기
+	// 인터페이스에 따라서 키 입력에 따라 실행
+	Magic();
+}
+
+void AInteractableActor::EndMagic()
+{
+
 }
 
