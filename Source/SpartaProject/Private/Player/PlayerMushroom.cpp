@@ -1,11 +1,17 @@
 ﻿// Fill out your copyright notice in the Description page of Project Settings.
 
 
+// Game
 #include "SpartaProject/Public/Player/PlayerMushroom.h"
-#include "EnhancedInputComponent.h"
-#include "GameFramework/CharacterMovementComponent.h"
 #include "SpartaProject/Public/Player/MushroomPlayerController.h"
+#include "EnhancedInputComponent.h"
+#include "Chaos/Utilities.h"
 
+
+// Engine
+
+#include "GameFramework/CharacterMovementComponent.h"
+#include "DrawDebugHelpers.h"
 
 class AMushroomPlayerController;
 
@@ -32,13 +38,22 @@ APlayerMushroom::APlayerMushroom()
 	// 스프링암 생성
 	SpringArm = CreateDefaultSubobject<USpringArmComponent>("SpringArm");
 	SpringArm->SetupAttachment(RootComponent);
-	SpringArm->TargetArmLength = 300.0f;
-	SpringArm->bUseCameraLagSubstepping = true;
 
 	// 카메라 생성
 	Camera = CreateDefaultSubobject<UCameraComponent>("Camera");
 	Camera->SetupAttachment(SpringArm, USpringArmComponent::SocketName);
+
+	// 컴포넌트 변수 초기화
+	SpringArm->TargetArmLength = 300.0f;
+	SpringArm->bUseCameraLagSubstepping = true;
+	
 	Camera->bUsePawnControlRotation = false;
+
+	// 상호작용 변수 초기화
+	BaseEyeHeight = 40.f;
+	
+	InteractionCheckDistance = 400.0f;
+	InteractionCheckFrequency = 0.1f;
 	
 }
 
@@ -53,6 +68,11 @@ void APlayerMushroom::BeginPlay()
 void APlayerMushroom::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	if (GetWorld()->TimeSince(InteractionData.LastInteractionCheckTime) > InteractionCheckFrequency)
+	{
+		PerformInteractionCheck();
+	}
 }
 
 // Called to bind functionality to input
@@ -133,6 +153,60 @@ void APlayerMushroom::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 	}
 }
 
+
+// 상호작용 함수
+
+
+void APlayerMushroom::PerformInteractionCheck()
+{
+	FVector ForwardVector = GetActorForwardVector();
+
+	FVector ViewLocation = GetPawnViewLocation();
+	FVector ViewRotation = GetViewRotation().Vector();
+
+	float LookDirection = FVector::DotProduct(ViewRotation, ForwardVector);
+
+	InteractionData.LastInteractionCheckTime = GetWorld()->GetTimeSeconds();
+
+	FVector TraceStart = ViewLocation;
+	FVector TraceEnd = TraceStart + (ViewRotation * InteractionCheckDistance);
+
+	if (LookDirection > 0)
+	{
+		// 디버스 라인 생성
+		DrawDebugLine(GetWorld(), TraceStart, TraceEnd, FColor::Red, false, 0.5f, 0, 2.0f);
+    
+		// 충돌 검사기 생성
+		FCollisionQueryParams TraceParams;
+    
+		// 캐릭터 본인은 무시
+		TraceParams.AddIgnoredActor(this);
+		FHitResult TraceHit;
+    	
+		// 충돌 감지
+		if (GetWorld()->LineTraceSingleByChannel(TraceHit, TraceStart, TraceEnd, ECC_Visibility, TraceParams))
+		{
+			// 충돌한 액터가 상호작용 가능한 액터일 경우
+			// TODO: 충돌체 인터페이스 가져오는 걸로.
+			if (TraceHit.GetActor()->GetClass()->IsChildOf(AInteractableActor::StaticClass()))
+			{
+				// if ()
+			}
+
+			// 아닌 경우
+    		
+		}
+	}
+}
+
+void APlayerMushroom::FoundInteractableActor()
+{
+
+}
+
+
+
+
 // Input Action
 void APlayerMushroom::Move(const FInputActionValue& Input)
 {
@@ -147,8 +221,7 @@ void APlayerMushroom::Move(const FInputActionValue& Input)
 		
 		const FVector ForwardVector = FRotationMatrix(YawRotator).GetUnitAxis(EAxis::X);
         const FVector RightVector = FRotationMatrix(YawRotator).GetUnitAxis(EAxis::Y);
-
-		GetActorForwardVector()
+		
         // ForwardVector
         if (not FMath::IsNearlyZero(MoveInput.X))
         	AddMovementInput(ForwardVector, MoveInput.X);
