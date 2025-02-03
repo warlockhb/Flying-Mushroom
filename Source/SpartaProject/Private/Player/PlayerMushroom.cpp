@@ -12,6 +12,7 @@
 
 #include "GameFramework/CharacterMovementComponent.h"
 #include "DrawDebugHelpers.h"
+#include "Platforms/InteractableActorBase.h"
 
 class AMushroomPlayerController;
 
@@ -188,7 +189,7 @@ void APlayerMushroom::PerformInteractionCheck()
 		{
 			// 충돌한 액터가 상호작용 가능한 액터일 경우
 			// TODO: 충돌체 인터페이스 가져오는 걸로.
-			if (TraceHit.GetActor()->GetClass()->IsChildOf(AInteractableActor::StaticClass()))
+			if (TraceHit.GetActor()->GetClass()->IsChildOf(AInteractableActorBase::StaticClass()))
 			{
 				// if ()
 			}
@@ -210,12 +211,12 @@ void APlayerMushroom::FoundInteractableActor()
 // Input Action
 void APlayerMushroom::Move(const FInputActionValue& Input)
 {
-	if (not Controller) return;
-
 	const FVector2D MoveInput = Input.Get<FVector2D>();
+	MoveInputValue = MoveInput;
 
 	if (Controller != nullptr)
 	{
+		
 		const FRotator Rotator = Controller->GetControlRotation();
 		const FRotator YawRotator(0, Rotator.Yaw, 0);
 		

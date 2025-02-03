@@ -6,7 +6,7 @@
 #include "GameFramework/Character.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/SpringArmComponent.h"
-#include "Platforms/InteractableActor.h"
+#include "Platforms/InteractableActorBase.h"
 #include "PlayerMushroom.generated.h"
 
 struct FInputActionValue;
@@ -20,7 +20,7 @@ struct FInteractionData
 
 	// HACK: 인터랙션 가능 액터로 바꿔도 되는지 추후 확인
 	UPROPERTY()
-	AInteractableActor* CurrentInteractable;
+	AInteractableActorBase* CurrentInteractable;
 
 	UPROPERTY()
 	float LastInteractionCheckTime;
@@ -32,15 +32,23 @@ class SPARTAPROJECT_API APlayerMushroom : public ACharacter
 {
 	GENERATED_BODY()
 
-public:
-	// Sets default values for this character's properties
-	APlayerMushroom();
-
 protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
+	//——————————————————————————————————————————————————————————————————————
+	// 프로퍼티 & 변수
+	//——————————————————————————————————————————————————————————————————————
+	// 이동 변수
+	UPROPERTY()
+	FVector2D MoveInputValue;
 
+
+	//——————————————————————————————————————————————————————————————————————
+	// 함수
+	//——————————————————————————————————————————————————————————————————————
+    virtual void BeginPlay() override;
+	
 public:
+	APlayerMushroom();
+	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
@@ -50,6 +58,7 @@ public:
 	//——————————————————————————————————————————————————————————————————————
 	// 프로퍼티 & 변수
 	//——————————————————————————————————————————————————————————————————————
+
 
 	// 컴포넌트
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Components")
@@ -109,4 +118,8 @@ public:
 	//TODO: 대시 구현
 	void StartDash(const FInputActionValue& Input);
 	void EndDash(const FInputActionValue& Input);
+
+	// Getter
+	UFUNCTION(BlueprintPure)
+	FVector2D GetMoveInputValue() const { return MoveInputValue; }
 };
