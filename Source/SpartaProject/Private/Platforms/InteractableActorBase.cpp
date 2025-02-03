@@ -1,13 +1,13 @@
 ﻿// Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "SpartaProject/Public/Platforms/InteractableActor.h"
+#include "SpartaProject/Public/Platforms/InteractableActorBase.h"
 
 #include "Components/SphereComponent.h"
 
 
 // Sets default values
-AInteractableActor::AInteractableActor()
+AInteractableActorBase::AInteractableActorBase()
 {
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -25,14 +25,14 @@ AInteractableActor::AInteractableActor()
 }
 
 // Called when the game starts or when spawned
-void AInteractableActor::BeginPlay()
+void AInteractableActorBase::BeginPlay()
 {
 	Super::BeginPlay();
 	
 }
 
 // Called every frame
-void AInteractableActor::Tick(float DeltaTime)
+void AInteractableActorBase::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
@@ -40,21 +40,20 @@ void AInteractableActor::Tick(float DeltaTime)
 }
 
 // 마법 관련 함수
-void AInteractableActor::Magic()
+void AInteractableActorBase::Magic()
 {
-	
 }
 
 
-void AInteractableActor::StartMagic()
+void AInteractableActorBase::StartMagic()
 {
-	// 플레이어의 충돌체 감지에 의해서 인터페이스를 띄우기
 	// 인터페이스에 따라서 키 입력에 따라 실행
-	Magic();
+	bPressedMagic = true;
 }
 
-void AInteractableActor::EndMagic()
+void AInteractableActorBase::EndMagic()
 {
-
+	// 인터페이스에 따라서 키 입력에 따라 실행
+	bPressedMagic = false;
 }
 

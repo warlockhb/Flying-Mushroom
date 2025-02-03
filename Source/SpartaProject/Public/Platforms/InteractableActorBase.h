@@ -5,10 +5,10 @@
 #include "CoreMinimal.h"
 #include "Components/BoxComponent.h"
 #include "GameFramework/Actor.h"
-#include "InteractableActor.generated.h"
+#include "InteractableActorBase.generated.h"
 
 UCLASS()
-class SPARTAPROJECT_API AInteractableActor : public AActor
+class SPARTAPROJECT_API AInteractableActorBase : public AActor
 {
 	GENERATED_BODY()
 protected:
@@ -16,7 +16,7 @@ protected:
 
 	
 	// Sets default values for this actor's properties
-	AInteractableActor();
+	AInteractableActorBase();
 
 	//——————————————————————————————————————————————————————————————————————
 	// 프로퍼티 & 변수
