@@ -80,8 +80,10 @@ public:
 	
 	UPROPERTY()
 	FInteractionData InteractionData;
-	
-	
+
+	UPROPERTY()
+	bool bCanInteract;
+		
 
 	//——————————————————————————————————————————————————————————————————————
 	// 함수
@@ -89,6 +91,7 @@ public:
 
 	// 오버라이드 함수
 
+	// ------------------------------------------------------------------
 	// 상호작용 관련 함수
 	// TODO: 상호작용 관련되서 데이터 상세화 - 액터 먼저 우선순위
 	// TODO: 상호작용 입력도 구현 | 상호작용 액터 구현 후
@@ -104,21 +107,25 @@ public:
 
 	void Interact();
 
-	// 입력 -> 동작 함수
+	// -------------------------------------------------------------------
+	// 입력
 	void Move(const FInputActionValue& Input);
-
-
 
 	void StartJump(const FInputActionValue& Input);
 	void EndJump(const FInputActionValue& Input);
 
 	// 
 	void Look(const FInputActionValue& Input);
-
+	
 	//TODO: 대시 구현
 	void StartDash(const FInputActionValue& Input);
 	void EndDash(const FInputActionValue& Input);
 
+	void PressedInteract(const FInputActionValue& Input);
+
+
+
+	// -------------------------------------------------------------------
 	// Getter
 	UFUNCTION(BlueprintPure)
 	FVector2D GetMoveInputValue() const { return MoveInputValue; }

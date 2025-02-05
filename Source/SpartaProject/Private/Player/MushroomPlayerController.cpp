@@ -9,7 +9,8 @@ AMushroomPlayerController::AMushroomPlayerController():
 	MoveAction(nullptr),
 	JumpAction(nullptr),
 	LookAction(nullptr),
-	DashAction(nullptr)
+	DashAction(nullptr),
+	InteractAction(nullptr)
 {
 }
 

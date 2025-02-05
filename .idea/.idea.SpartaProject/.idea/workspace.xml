@@ -11,44 +11,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="248a3e87-0322-4425-b863-2003a39a4886" name="변경" comment="🎉Init: Create Project">
-      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Private/NPC/NPC.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Private/Platforms/InteractableActor.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Private/Player/PlayerMushroom.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Private/World/MushroomGameMode.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Public/NPC/NPC.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Public/Platforms/InteractableActor.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Public/Player/PlayerMushroom.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Public/World/MushroomGameMode.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-SpartaProject.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-SpartaProject.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-SpartaProject.exp" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-SpartaProject.exp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-SpartaProject.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-SpartaProject.pdb" afterDir="false" />
+    <list default="true" id="248a3e87-0322-4425-b863-2003a39a4886" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Private/Interfaces/InteractionInterface.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Private/Platforms/RollingPlatform.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Private/Platforms/RotatingPlatform.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Public/Interfaces/InteractionInterface.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Public/Platforms/RollingPlatform.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Public/Platforms/RotatingPlatform.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SpartaProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SpartaProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/SourceFileCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/SourceFileCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/ActionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/ActionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/SpartaProjectEditor/Development/SpartaProjectEditor.uhtmanifest" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/SpartaProjectEditor/Development/SpartaProjectEditor.uhtmanifest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Inc/SpartaProject/UHT/Item.gen.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Inc/SpartaProject/UHT/Item.generated.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Inc/SpartaProject/UHT/SpartaProject.init.gen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Inc/SpartaProject/UHT/SpartaProject.init.gen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Inc/SpartaProject/UHT/Timestamp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Inc/SpartaProject/UHT/Timestamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/SpartaProjectEditor/Development/DependencyCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/SpartaProjectEditor/Development/DependencyCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/SpartaProjectEditor/Development/Makefile.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/SpartaProjectEditor/Development/Makefile.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/ActionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/ActionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/SpartaProject/Default.rc2.res" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/SpartaProject/Default.rc2.res" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/SpartaProject/Default.rc2.res.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/SpartaProject/Default.rc2.res.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/SpartaProject/SpartaProject.init.gen.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/SpartaProject/SpartaProject.init.gen.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/SpartaProject/UnrealEditor-SpartaProject.dll.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/SpartaProject/UnrealEditor-SpartaProject.dll.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/SpartaProject/UnrealEditor-SpartaProject.dll.rsp.old" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/SpartaProject/UnrealEditor-SpartaProject.dll.rsp.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/SpartaProject/UnrealEditor-SpartaProject.exp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/SpartaProject/UnrealEditor-SpartaProject.exp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/SpartaProject/UnrealEditor-SpartaProject.lib" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/SpartaProject/UnrealEditor-SpartaProject.lib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/SpartaProject/UnrealEditor-SpartaProject.lib.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/SpartaProject/UnrealEditor-SpartaProject.lib.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/SpartaProject/UnrealEditor-SpartaProject.lib.rsp.old" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/SpartaProject/UnrealEditor-SpartaProject.lib.rsp.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/CachedAssetRegistry_0.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/CachedAssetRegistry_0.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/ProjectFiles/SpartaProject.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/ProjectFiles/SpartaProject.vcxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/AutoScreenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/AutoScreenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/WindowsEditor/EditorPerProjectUserSettings.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Config/WindowsEditor/EditorPerProjectUserSettings.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/SpartaProject.log" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Logs/SpartaProject.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/SourceControl/UncontrolledChangelists.json" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/SourceControl/UncontrolledChangelists.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/FlyingMushroom/World/BP_MushroomGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/FlyingMushroom/World/BP_MushroomGameMode.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StarterContent/Architecture/Floor_400x400.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Architecture/Floor_400x400.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StarterContent/Materials/M_Metal_Gold.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Materials/M_Metal_Gold.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StylizedProvencal/Blueprints/BP_Windmill.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StylizedProvencal/Blueprints/BP_Windmill.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StylizedProvencal/Maps/Main.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StylizedProvencal/Maps/Main.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StylizedProvencal/Meshes/SM_WindMill_Palms.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StylizedProvencal/Meshes/SM_WindMill_Palms.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SpartaProject/Private/Platforms/InteractableActorBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SpartaProject/Private/Platforms/InteractableActorBase.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SpartaProject/Private/Player/MushroomPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SpartaProject/Private/Player/MushroomPlayerController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SpartaProject/Private/Player/PlayerHornet.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SpartaProject/Private/Player/PlayerMushroom.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SpartaProject/Private/Player/PlayerMushroom.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SpartaProject/Public/Platforms/InteractableActorBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SpartaProject/Public/Platforms/InteractableActorBase.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SpartaProject/Public/Player/MushroomPlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SpartaProject/Public/Player/MushroomPlayerController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SpartaProject/Public/Player/PlayerHornet.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SpartaProject/Public/Player/PlayerMushroom.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SpartaProject/Public/Player/PlayerMushroom.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,24 +46,34 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "warlockhb"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;warlockhb&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/warlockhb/Flying-Mushroom.git",
-    "accountId": "a4aeaadc-c9e8-41f0-a758-baf2672e30e3"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/warlockhb/Flying-Mushroom.git&quot;,
+    &quot;accountId&quot;: &quot;a4aeaadc-c9e8-41f0-a758-baf2672e30e3&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Intermediate/Build/BuildRulesProjects/SpartaProjectModuleRules/obj/Development/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/SpartaProject/Private/Platforms/InteractableActorBase.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/SpartaProject/Private/Platforms/RollingPlatform.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/SpartaProject/Private/Platforms/RotatingPlatform.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/SpartaProject/Private/Player/PlayerMushroom.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/SpartaProject/Public/Platforms/InteractableActorBase.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/SpartaProject/Public/Platforms/RollingPlatform.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/SpartaProject/Public/Platforms/RotatingPlatform.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/SpartaProject/Public/Player/PlayerMushroom.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="NamedScopeManager">
+    <scope name="프로젝트" pattern="file:Source//*" />
+  </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="SWEA" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -88,20 +83,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "C/C++ 프로젝트.SpartaProject.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "CodeLensConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;C/C++ 프로젝트.SpartaProject.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="C/C++ 프로젝트.SpartaProject">
     <configuration name="SpartaProject" type="CppProject" factoryName="C++ Project">
       <configuration_1 setup="1">
@@ -197,7 +193,12 @@
       <workItem from="1737351472225" duration="15298000" />
       <workItem from="1737436348759" duration="18381000" />
       <workItem from="1737522432793" duration="9974000" />
-      <workItem from="1737543635179" duration="7087000" />
+      <workItem from="1737543635179" duration="24558000" />
+      <workItem from="1737611773189" duration="17935000" />
+      <workItem from="1738541451246" duration="5749000" />
+      <workItem from="1738559100193" duration="21882000" />
+      <workItem from="1738629938313" duration="27561000" />
+      <workItem from="1738719177118" duration="666000" />
     </task>
     <task id="LOCAL-00001" summary="🙈Update: .gitignore">
       <option name="closed" value="true" />
@@ -215,7 +216,63 @@
       <option name="project" value="LOCAL" />
       <updated>1737544025834</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="🎉Init: Create Project">
+      <option name="closed" value="true" />
+      <created>1737554263907</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1737554263907</updated>
+    </task>
+    <task id="LOCAL-00004" summary="✨Add: 버섯 플레이어 이동 및 컨트롤러 구현">
+      <option name="closed" value="true" />
+      <created>1737614737052</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1737614737052</updated>
+    </task>
+    <task id="LOCAL-00005" summary="✨Update: 버섯 플레이어 이동 및 상호작용 감지 구현">
+      <option name="closed" value="true" />
+      <created>1737623017519</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1737623017519</updated>
+    </task>
+    <task id="LOCAL-00006" summary="✨Add: 상호작용 액터 - 충돌체 및 충돌 감지 설정">
+      <option name="closed" value="true" />
+      <created>1737623062209</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1737623062209</updated>
+    </task>
+    <task id="LOCAL-00007" summary="♻️Refactor: 이름 변경 InteractableActor -&gt; InteractableActorBase">
+      <option name="closed" value="true" />
+      <created>1738541981717</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1738541981718</updated>
+    </task>
+    <task id="LOCAL-00008" summary="✨Update: 캐릭터 내 MoveInputValue 추가">
+      <option name="closed" value="true" />
+      <created>1738542052645</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1738542052645</updated>
+    </task>
+    <task id="LOCAL-00009" summary="✨Update: Config 및 게임모드 업데이트">
+      <option name="closed" value="true" />
+      <created>1738542123826</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1738542123826</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,7 +285,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -238,7 +307,13 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Update: .gitignore" />
     <MESSAGE value="Init: Create Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init: Create Project" />
+    <MESSAGE value="✨Add: 버섯 플레이어 이동 및 컨트롤러 구현" />
+    <MESSAGE value="✨Update: 버섯 플레이어 이동 및 상호작용 감지 구현" />
+    <MESSAGE value="✨Add: 상호작용 액터 - 충돌체 및 충돌 감지 설정" />
+    <MESSAGE value="♻️Refactor: 이름 변경 InteractableActor -&gt; InteractableActorBase" />
+    <MESSAGE value="✨Update: 캐릭터 내 MoveInputValue 추가" />
+    <MESSAGE value="✨Update: Config 및 게임모드 업데이트" />
+    <option name="LAST_COMMIT_MESSAGE" value="✨Update: Config 및 게임모드 업데이트" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

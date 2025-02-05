@@ -73,6 +73,7 @@ void APlayerMushroom::Tick(float DeltaTime)
 	if (GetWorld()->TimeSince(InteractionData.LastInteractionCheckTime) > InteractionCheckFrequency)
 	{
 		PerformInteractionCheck();
+		
 	}
 }
 
@@ -150,14 +151,23 @@ void APlayerMushroom::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 					&APlayerMushroom::EndDash
 				);
 			}
+
+			if (PlayerController->InteractAction)
+			{
+				EnhancedInput->BindAction
+				(
+					PlayerController->InteractAction,
+					ETriggerEvent::Triggered,
+					this,
+					&APlayerMushroom::PressedInteract
+				);
+			}
 		}
 	}
 }
 
-
+//------------------------------------------------------------------------------------------------------------
 // 상호작용 함수
-
-
 void APlayerMushroom::PerformInteractionCheck()
 {
 	FVector ForwardVector = GetActorForwardVector();
@@ -175,8 +185,8 @@ void APlayerMushroom::PerformInteractionCheck()
 	if (LookDirection > 0)
 	{
 		// 디버스 라인 생성
-		DrawDebugLine(GetWorld(), TraceStart, TraceEnd, FColor::Red, false, 0.5f, 0, 2.0f);
-    
+		// DrawDebugLine(GetWorld(), TraceStart, TraceEnd, FColor::Red, false, 0.5f, 0, 2.0f);
+
 		// 충돌 검사기 생성
 		FCollisionQueryParams TraceParams;
     
@@ -189,14 +199,19 @@ void APlayerMushroom::PerformInteractionCheck()
 		{
 			// 충돌한 액터가 상호작용 가능한 액터일 경우
 			// TODO: 충돌체 인터페이스 가져오는 걸로.
-			if (TraceHit.GetActor()->GetClass()->IsChildOf(AInteractableActorBase::StaticClass()))
+			if (AInteractableActorBase* InteractableActor = Cast<AInteractableActorBase>(TraceHit.GetActor()))
 			{
-				// if ()
+				InteractionData.CurrentInteractable = InteractableActor;
+				UE_LOG(LogTemp, Display, TEXT("Player Interactable Actor"));
+				bCanInteract = true;
+				// UI 표시 로직 추가
+				return;
 			}
-
-			// 아닌 경우
-    		
 		}
+		// 레이캐스트에 걸린 것이 없으면
+		InteractionData.CurrentInteractable = nullptr;
+		bCanInteract = false;
+		// UI 숨김 로직 추가
 	}
 }
 
@@ -205,9 +220,20 @@ void APlayerMushroom::FoundInteractableActor()
 
 }
 
+void APlayerMushroom::BeginInteract()
+{
+}
+
+void APlayerMushroom::EndInteract()
+{
+}
+
+void APlayerMushroom::Interact()
+{
+}
 
 
-
+// -----------------------------------------------------------------------------------------------------
 // Input Action
 void APlayerMushroom::Move(const FInputActionValue& Input)
 {
@@ -270,3 +296,12 @@ void APlayerMushroom::EndDash(const FInputActionValue& Input)
 {
 	
 }
+
+void APlayerMushroom::PressedInteract(const FInputActionValue& Input)
+{
+	if (bCanInteract && InteractionData.CurrentInteractable)
+	{
+		InteractionData.CurrentInteractable->StartMagic();
+	}
+}
+
