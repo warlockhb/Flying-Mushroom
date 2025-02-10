@@ -11,30 +11,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="248a3e87-0322-4425-b863-2003a39a4886" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Private/Interfaces/InteractionInterface.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Private/Platforms/RollingPlatform.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Private/Platforms/RotatingPlatform.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Public/Interfaces/InteractionInterface.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Public/Platforms/RollingPlatform.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Public/Platforms/RotatingPlatform.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SpartaProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SpartaProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FlyingMushroom/World/BP_MushroomGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/FlyingMushroom/World/BP_MushroomGameMode.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/StarterContent/Architecture/Floor_400x400.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Architecture/Floor_400x400.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/StarterContent/Materials/M_Metal_Gold.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Materials/M_Metal_Gold.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/StylizedProvencal/Blueprints/BP_Windmill.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StylizedProvencal/Blueprints/BP_Windmill.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/StylizedProvencal/Maps/Main.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StylizedProvencal/Maps/Main.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/StylizedProvencal/Meshes/SM_WindMill_Palms.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StylizedProvencal/Meshes/SM_WindMill_Palms.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SpartaProject/Private/Platforms/InteractableActorBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SpartaProject/Private/Platforms/InteractableActorBase.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SpartaProject/Private/Player/MushroomPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SpartaProject/Private/Player/MushroomPlayerController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SpartaProject/Private/Player/PlayerHornet.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SpartaProject/Private/Player/PlayerMushroom.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SpartaProject/Private/Player/PlayerMushroom.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SpartaProject/Public/Platforms/InteractableActorBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SpartaProject/Public/Platforms/InteractableActorBase.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SpartaProject/Public/Player/MushroomPlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SpartaProject/Public/Player/MushroomPlayerController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SpartaProject/Public/Player/PlayerHornet.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SpartaProject/Public/Player/PlayerMushroom.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SpartaProject/Public/Player/PlayerMushroom.h" afterDir="false" />
-    </list>
+    <list default="true" id="248a3e87-0322-4425-b863-2003a39a4886" name="변경" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -199,6 +176,7 @@
       <workItem from="1738559100193" duration="21882000" />
       <workItem from="1738629938313" duration="27561000" />
       <workItem from="1738719177118" duration="666000" />
+      <workItem from="1738721504928" duration="307000" />
     </task>
     <task id="LOCAL-00001" summary="🙈Update: .gitignore">
       <option name="closed" value="true" />
@@ -272,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738542123826</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="✨Update: 최종 업데이트">
+      <option name="closed" value="true" />
+      <created>1738721556040</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1738721556040</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,7 +299,8 @@
     <MESSAGE value="♻️Refactor: 이름 변경 InteractableActor -&gt; InteractableActorBase" />
     <MESSAGE value="✨Update: 캐릭터 내 MoveInputValue 추가" />
     <MESSAGE value="✨Update: Config 및 게임모드 업데이트" />
-    <option name="LAST_COMMIT_MESSAGE" value="✨Update: Config 및 게임모드 업데이트" />
+    <MESSAGE value="✨Update: 최종 업데이트" />
+    <option name="LAST_COMMIT_MESSAGE" value="✨Update: 최종 업데이트" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
