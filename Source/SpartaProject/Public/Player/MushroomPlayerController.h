@@ -1,9 +1,9 @@
-﻿// Fill out your copyright notice in the Description page of Project Settings.
-
+﻿
 #pragma once
 
 #include "CoreMinimal.h"
 #include "GameFramework/PlayerController.h"
+#include "Blueprint/UserWidget.h"
 #include "MushroomPlayerController.generated.h"
 
 /**
@@ -43,5 +43,14 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 	UInputAction* InteractAction;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "UI")
+	TSubclassOf<UUserWidget> HUDWidgetClass;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "UI")
+	UUserWidget* HUDWidgetInstance;
+
+	UFUNCTION(BlueprintCallable, Category = "HUD")
+	UUserWidget* GetHUDWidget() const { return HUDWidgetInstance; }
+	
 	virtual void BeginPlay() override;
 };

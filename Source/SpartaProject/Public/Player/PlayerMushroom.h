@@ -40,26 +40,14 @@ protected:
 	UPROPERTY()
 	FVector2D MoveInputValue;
 
+	// 플레이어 스테이트
+	UPROPERTY()
+	float MaxHealth;
 
-	//——————————————————————————————————————————————————————————————————————
-	// 함수
-	//——————————————————————————————————————————————————————————————————————
-    virtual void BeginPlay() override;
+	UPROPERTY()
+	float Health;
+
 	
-public:
-	APlayerMushroom();
-	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
-	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-	
-	//——————————————————————————————————————————————————————————————————————
-	// 프로퍼티 & 변수
-	//——————————————————————————————————————————————————————————————————————
-
-
 	// 컴포넌트
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Components")
 	USpringArmComponent* SpringArm;
@@ -83,7 +71,35 @@ public:
 
 	UPROPERTY()
 	bool bCanInteract;
-		
+	
+	//——————————————————————————————————————————————————————————————————————
+	// 함수
+	//——————————————————————————————————————————————————————————————————————
+    virtual void BeginPlay() override;
+	
+	virtual float TakeDamage(
+		float Damage,
+		const FDamageEvent& DamageEvent,
+		AController* EventInstigator,
+		AActor* DamageCauser) override;
+
+	void OnDeath();
+	
+public:
+	APlayerMushroom();
+	
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
+	// Called to bind functionality to input
+	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	
+	//——————————————————————————————————————————————————————————————————————
+	// 프로퍼티 & 변수
+	//——————————————————————————————————————————————————————————————————————
+
+
+	
 
 	//——————————————————————————————————————————————————————————————————————
 	// 함수
@@ -122,11 +138,21 @@ public:
 	void EndDash(const FInputActionValue& Input);
 
 	void PressedInteract(const FInputActionValue& Input);
-
-
+	
 
 	// -------------------------------------------------------------------
 	// Getter
 	UFUNCTION(BlueprintPure)
 	FVector2D GetMoveInputValue() const { return MoveInputValue; }
-};
+
+	UFUNCTION(BlueprintPure)
+	float GetMaxHealth() const { return MaxHealth; }
+
+	UFUNCTION(BlueprintPure, Category="Interaction")
+	float GetHealth() const { return Health; }
+
+	//Setter
+	UFUNCTION(BlueprintCallable, Category="Health")
+	void AddHealth(float Amount);
+  };
+

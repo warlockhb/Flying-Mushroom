@@ -55,6 +55,10 @@ APlayerMushroom::APlayerMushroom()
 	
 	InteractionCheckDistance = 400.0f;
 	InteractionCheckFrequency = 0.1f;
+
+	// 플레이어 스테이트
+	MaxHealth = 100;
+	Health = MaxHealth;
 	
 }
 
@@ -63,6 +67,30 @@ void APlayerMushroom::BeginPlay()
 {
 	Super::BeginPlay();
 	
+}
+
+float APlayerMushroom::TakeDamage(
+	float Damage,
+	const FDamageEvent& DamageEvent,
+	AController* EventInstigator,
+	AActor* DamageCauser)
+{
+	float ActualDamage = Super::TakeDamage(Damage, DamageEvent, EventInstigator, DamageCauser);
+
+	Health = FMath::Clamp(Health - ActualDamage, 0, Health);
+	UE_LOG(LogTemp, Display, TEXT("Player HP = %f"), Health);
+	
+	if (Health <= 0)
+	{
+		OnDeath();
+	}
+	
+	return ActualDamage;
+}
+
+void APlayerMushroom::OnDeath()
+{
+	// 게임 종료 로직
 }
 
 // Called every frame
@@ -304,4 +332,17 @@ void APlayerMushroom::PressedInteract(const FInputActionValue& Input)
 		InteractionData.CurrentInteractable->StartMagic();
 	}
 }
+
+
+// Setter
+void APlayerMushroom::AddHealth(float Amount)
+{
+	Health = FMath::Clamp(Health + Amount, 0, MaxHealth);
+	UE_LOG(LogTemp, Display, TEXT("Player Health: %f"), Health);
+}
+
+
+
+
+
 

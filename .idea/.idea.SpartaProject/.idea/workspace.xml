@@ -11,7 +11,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="248a3e87-0322-4425-b863-2003a39a4886" name="변경" comment="" />
+    <list default="true" id="248a3e87-0322-4425-b863-2003a39a4886" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Private/Interfaces/ItemInterface.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Private/Item/BigCoinItem.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Private/Item/CoinItem.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Private/Item/HealingItem.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Private/Item/ItemBase.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Private/Item/ItemSpawnRow.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Private/Item/MineItem.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Private/Item/SmallCoinItem.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Private/World/MushroomGameState.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Private/World/SpawnVolume.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Public/Interfaces/ItemInterface.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Public/Item/BigCoinItem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Public/Item/CoinItem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Public/Item/HealingItem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Public/Item/ItemBase.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Public/Item/ItemSpawnRow.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Public/Item/MineItem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Public/Item/SmallCoinItem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Public/World/MushroomGameState.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/SpartaProject/Public/World/SpawnVolume.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SpartaProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SpartaProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/FlyingMushroom/World/BP_MushroomGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/FlyingMushroom/World/BP_MushroomGameMode.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/BP_Items_01.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StylizedProvencal/Maps/Main.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StylizedProvencal/Maps/Main.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SpartaProject/Private/Interfaces/InteractionInterface.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SpartaProject/Private/World/MushroomGameInstance.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SpartaProject/Private/Player/MushroomPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SpartaProject/Private/Player/MushroomPlayerController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SpartaProject/Private/Player/PlayerMushroom.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SpartaProject/Private/Player/PlayerMushroom.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SpartaProject/Private/World/MushroomGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SpartaProject/Private/World/MushroomGameMode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SpartaProject/Public/Interfaces/InteractionInterface.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SpartaProject/Public/World/MushroomGameInstance.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SpartaProject/Public/Player/MushroomPlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SpartaProject/Public/Player/MushroomPlayerController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SpartaProject/Public/Player/PlayerMushroom.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SpartaProject/Public/Player/PlayerMushroom.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SpartaProject/SpartaProject.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SpartaProject/SpartaProject.Build.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,14 +70,17 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Source/SpartaProject/Private/Item/ItemBase.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/SpartaProject/Private/Platforms/InteractableActorBase.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/SpartaProject/Private/Platforms/RollingPlatform.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/SpartaProject/Private/Platforms/RotatingPlatform.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/SpartaProject/Private/Player/PlayerMushroom.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/SpartaProject/Public/Item/ItemBase.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/SpartaProject/Public/Platforms/InteractableActorBase.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/SpartaProject/Public/Platforms/RollingPlatform.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/SpartaProject/Public/Platforms/RotatingPlatform.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/SpartaProject/Public/Player/PlayerMushroom.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/SpartaProject/Public/World/MushroomGameState.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NamedScopeManager">
@@ -60,21 +97,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;C/C++ 프로젝트.SpartaProject.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "C/C++ 프로젝트.SpartaProject.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "configurable.group.tools",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="C/C++ 프로젝트.SpartaProject">
     <configuration name="SpartaProject" type="CppProject" factoryName="C++ Project">
       <configuration_1 setup="1">
@@ -160,6 +197,9 @@
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
       <changelist id="248a3e87-0322-4425-b863-2003a39a4886" name="변경" comment="" />
@@ -177,6 +217,14 @@
       <workItem from="1738629938313" duration="27561000" />
       <workItem from="1738719177118" duration="666000" />
       <workItem from="1738721504928" duration="307000" />
+      <workItem from="1739170667026" duration="8696000" />
+      <workItem from="1739241635302" duration="2037000" />
+      <workItem from="1739243836914" duration="13122000" />
+      <workItem from="1739269661594" duration="1978000" />
+      <workItem from="1739327232674" duration="3953000" />
+      <workItem from="1739331214488" duration="9879000" />
+      <workItem from="1739346544011" duration="611000" />
+      <workItem from="1739347443237" duration="5709000" />
     </task>
     <task id="LOCAL-00001" summary="🙈Update: .gitignore">
       <option name="closed" value="true" />
@@ -258,7 +306,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738721556040</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="🔥Delete: Untitled.umap">
+      <option name="closed" value="true" />
+      <created>1739170752909</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1739170752909</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +356,8 @@
     <MESSAGE value="✨Update: 캐릭터 내 MoveInputValue 추가" />
     <MESSAGE value="✨Update: Config 및 게임모드 업데이트" />
     <MESSAGE value="✨Update: 최종 업데이트" />
-    <option name="LAST_COMMIT_MESSAGE" value="✨Update: 최종 업데이트" />
+    <MESSAGE value="Delete : Untitled.umap" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete : Untitled.umap" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

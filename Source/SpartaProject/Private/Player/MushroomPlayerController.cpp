@@ -3,6 +3,7 @@
 
 #include "SpartaProject/Public/Player/MushroomPlayerController.h"
 #include "EnhancedInputSubsystems.h"
+#include "World/MushroomGameState.h"
 
 AMushroomPlayerController::AMushroomPlayerController():
 	InputMappingContext(nullptr),
@@ -10,7 +11,8 @@ AMushroomPlayerController::AMushroomPlayerController():
 	JumpAction(nullptr),
 	LookAction(nullptr),
 	DashAction(nullptr),
-	InteractAction(nullptr)
+	InteractAction(nullptr),
+	HUDWidgetClass(nullptr)
 {
 }
 
@@ -28,6 +30,23 @@ void AMushroomPlayerController::BeginPlay()
 			{
 				Subsystem->AddMappingContext(InputMappingContext, 0);
 			}
+		}
+	}
+
+	if (HUDWidgetClass)
+	{
+		HUDWidgetInstance = CreateWidget<UUserWidget>(this, HUDWidgetClass);
+
+		if (HUDWidgetInstance)
+		{
+			HUDWidgetInstance->AddToViewport();
+		}
+
+		AMushroomGameState* MushroomGameState = GetWorld() ? GetWorld()->GetGameState<AMushroomGameState>() : nullptr;
+
+		if (MushroomGameState)
+		{
+			MushroomGameState->UpdateHUD();
 		}
 	}
 }
